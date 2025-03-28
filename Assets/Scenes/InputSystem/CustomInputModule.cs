@@ -17,7 +17,7 @@ public class CustomInputModule : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
 
         PlayerInputActions playerInputactions = new PlayerInputActions();
-        //playerInputActions.Player1.Enable();
+        //playerInputActions.Player1.Enable();   ------------------------------  ( Deze werkt momenteel niet voor een reden die ik niet doorheb) 
 
 
 
