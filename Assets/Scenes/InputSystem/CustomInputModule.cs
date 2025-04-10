@@ -3,41 +3,104 @@ using UnityEngine.InputSystem;
 
 public class CustomInputModule : MonoBehaviour
 {
-    public Rigidbody2D player1; // Assign your Capsule's Rigidbody2D here.
-    public Rigidbody2D player2; // Assign your Circle's Rigidbody2D here.
-    public float moveSpeed = 5f;
-    public float jumpForce = 10f;
 
-    private void Update()
+    public Rigidbody2D player1;
+    public Rigidbody2D player2;
+    private PlayerInput playerInput;
+    private PlayerInputActions playerInputActions;
+
+
+    private void Awake()
     {
-        var gamepads = Gamepad.all;
+        playerInput = GetComponent<PlayerInput>();
 
-        // Check for the first gamepad (Player 1)
-        if (gamepads.Count >= 1 && player1 != null)
+        playerInputActions = new PlayerInputActions();
+        playerInputActions.Player1.Enable();
+        playerInputActions.Player2.Enable();
+
+        //playerInputActions.Player1.Jump.performed += Jump;
+        //playerInputActions.Player2.Jump.performed += Jump;
+
+        playerInputActions.Player1.Movement.performed += Movement_performed;
+        playerInputActions.Player2.Movement.performed += Movement_performed;
+
+    }
+
+    private void Movement_performed(InputAction.CallbackContext context)
+    {
+        Vector2 inputVector = context.ReadValue<Vector2>();
+        float speed = 5f;
+
+        if (player1 != null)
+            player1.linearVelocity = new Vector2(inputVector.x * speed, player1.linearVelocity.y);
+
+        if (player2 != null)
+            player2.linearVelocity = new Vector2(inputVector.x * speed, player2.linearVelocity.y);
+    }
+
+    public void Update()
+    {
+        if(JumpP1())
         {
-            // Read movement from gamepad 1's left stick
-            Vector2 inputP1 = gamepads[0].leftStick.ReadValue();
-            player1.linearVelocity = new Vector2(inputP1.x * moveSpeed, player1.linearVelocity.y);
-
-            // Check button press for jump
-            if (gamepads[0].buttonSouth.wasPressedThisFrame && Mathf.Abs(player1.linearVelocity.y) < 0.01f)
-            {
-                player1.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            }
+            if (player1 != null)
+                player1.AddForce(Vector2.up * 1, ForceMode2D.Impulse);
         }
 
-        // Check for the second gamepad (Player 2)
-        if (gamepads.Count >= 2 && player2 != null)
+        if (JumpP2())
         {
-            // Read movement from gamepad 2's left stick
-            Vector2 inputP2 = gamepads[1].leftStick.ReadValue();
-            player2.linearVelocity = new Vector2(inputP2.x * moveSpeed, player2.linearVelocity.y);
-
-            // Check button press for jump
-            if (gamepads[1].buttonSouth.wasPressedThisFrame && Mathf.Abs(player2.linearVelocity.y) < 0.01f)
-            {
-                player2.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            }
+            if (player2 != null)
+                player2.AddForce(Vector2.up * 1, ForceMode2D.Impulse);
         }
+    }
+
+
+    //public void Jump(InputAction.CallbackContext context)
+    //{
+    //    Debug.Log("Jump!");
+    //    if (player1 != null)
+    //        player1.AddForce(Vector2.up * 1, ForceMode2D.Impulse);
+
+    //    if (player2 != null)
+    //        player2.AddForce(Vector2.up * 2, ForceMode2D.Impulse);
+    //}
+
+    //public Vector2 LeftAnalog()
+    //{
+    //    Vector2 inputDir = PlayerInputSystem.Player1.Movement.ReadValue<Vector2>();
+    //    //Debug.Log(inputDir);
+    //    return inputDir;
+    //}
+
+
+    //public void Update()
+    //{
+    //    if(CustomInputModule.instance.Jump())
+    //    {
+    //        Debug.Log("Jump");
+    //    }
+    //}
+
+    public bool JumpP1()
+    {
+        float jumpFloat = playerInputActions.Player1.Jump.ReadValue<float>();
+
+        if (jumpFloat >= 1)
+        {
+            return true;
+        }
+        else
+            return false;
+    }
+
+    public bool JumpP2()
+    {
+        float jumpFloat = playerInputActions.Player2.Jump.ReadValue<float>();
+
+        if (jumpFloat >= 1)
+        {
+            return true;
+        }
+        else
+            return false;
     }
 }

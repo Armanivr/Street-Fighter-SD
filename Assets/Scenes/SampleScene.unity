@@ -181,8 +181,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 948335156}
   player2: {fileID: 143344139}
-  moveSpeed: 5
-  jumpForce: 10
 --- !u!114 &143344141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,7 +194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 49ab041d13097764ca4c7abcc7318304, type: 3}
-  m_NotificationBehavior: 2
+  m_NotificationBehavior: 3
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -210,10 +208,10 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 143344140}
-        m_TargetAssemblyTypeName: CustomInputModule, Assembly-CSharp
-        m_MethodName: OnJumpP2
-        m_Mode: 0
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: TestingInputSystem, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -225,10 +223,14 @@ MonoBehaviour:
     m_ActionId: ae6bcf2f-9028-4f37-83f6-d5c1ded2695c
     m_ActionName: 'Player/Jump[/Keyboard/space,/DualSenseGamepadHID/buttonSouth]'
   - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 302a3db8-5e90-4142-a56e-9befa3fc2932
+    m_ActionName: 'Player1/Movement[/DualSenseGamepadHID/dpad/left,/DualSenseGamepadHID/dpad/right]'
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 143344140}
         m_TargetAssemblyTypeName: CustomInputModule, Assembly-CSharp
-        m_MethodName: OnMoveP2
+        m_MethodName: Jump
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -238,11 +240,27 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 3ccb1636-c2f7-4733-a04f-892d176a4f53
-    m_ActionName: 'Player/Move[/XInputControllerWindows/leftStick,/DualSenseGamepadHID/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
+    m_ActionId: d29c8a1e-f908-49a4-8640-b265a54200f7
+    m_ActionName: 'Player2/Jump[/Keyboard/space,/DualSenseGamepadHID/buttonSouth]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 143344141}
+        m_TargetAssemblyTypeName: UnityEngine.InputSystem.PlayerInput, Unity.InputSystem
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: cc09e3c8-02d5-4b8b-b07c-7bcbaac2d991
+    m_ActionName: 'Player2/Movement[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow,/DualSenseGamepadHID/dpad/up,/DualSenseGamepadHID/dpad/down,/DualSenseGamepadHID/dpad/left,/DualSenseGamepadHID/dpad/right]'
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
+  m_DefaultControlScheme: Mouse & Keyboard
+  m_DefaultActionMap: Player2
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!212 &143344142
@@ -587,7 +605,6 @@ GameObject:
   - component: {fileID: 948335159}
   - component: {fileID: 948335161}
   - component: {fileID: 948335160}
-  - component: {fileID: 948335162}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -740,10 +757,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb99ceba35f3808429a7f262ee8853f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 143344139}
-  player2: {fileID: 948335156}
-  moveSpeed: 5
-  jumpForce: 10
+  player1: {fileID: 948335156}
+  player2: {fileID: 0}
 --- !u!114 &948335161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -772,9 +787,9 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 948335160}
-        m_TargetAssemblyTypeName: CustomInputModule, Assembly-CSharp
-        m_MethodName: OnJumpP1
-        m_Mode: 0
+        m_TargetAssemblyTypeName: TestingInputSystem, Assembly-CSharp
+        m_MethodName: Jump
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -788,9 +803,9 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 948335160}
-        m_TargetAssemblyTypeName: CustomInputModule, Assembly-CSharp
-        m_MethodName: OnMoveP1
-        m_Mode: 0
+        m_TargetAssemblyTypeName: TestingInputSystem, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -799,29 +814,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 3ccb1636-c2f7-4733-a04f-892d176a4f53
-    m_ActionName: 'Player/Move[/XInputControllerWindows/leftStick,/DualSenseGamepadHID/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
+    m_ActionId: 302a3db8-5e90-4142-a56e-9befa3fc2932
+    m_ActionName: 'Player1/Movement[/DualSenseGamepadHID/dpad/left,/DualSenseGamepadHID/dpad/right]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d29c8a1e-f908-49a4-8640-b265a54200f7
+    m_ActionName: 'Player2/Jump[/Keyboard/space,/DualSenseGamepadHID/buttonSouth]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: cc09e3c8-02d5-4b8b-b07c-7bcbaac2d991
+    m_ActionName: 'Player2/Movement[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow,/DualSenseGamepadHID/dpad/up,/DualSenseGamepadHID/dpad/down,/DualSenseGamepadHID/dpad/left,/DualSenseGamepadHID/dpad/right]'
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
+  m_DefaultControlScheme: Joystick
+  m_DefaultActionMap: Player1
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &948335162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 948335155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bac4fc9b8a41554f8ab086b95a8e981, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  moveInput: {x: 0, y: 0}
-  moveSpeed: 5
-  jumpForce: 10
 --- !u!1 &1149491102
 GameObject:
   m_ObjectHideFlags: 0
