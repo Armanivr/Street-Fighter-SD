@@ -64,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -101,7 +101,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -359,7 +359,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bart Victory pose_0: -7627170725029916844
+      Bart Victory pose_1: 4144419382295063351
+      Bart Victory pose_2: 8446906136567819218
+      Bart Victory pose_3: 5968461363962679182
+      Bart Victory pose_4: -4942421761438750089
+      Bart Victory pose_5: 3532790719945178919
+      Bart Victory pose_6: 3691610144126793899
+      Bart Victory pose_7: 2106092790434678178
+      Bart Victory pose_8: 4886678322295431699
+      Bart Victory pose_9: -7971068729593748964
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

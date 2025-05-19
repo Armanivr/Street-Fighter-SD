@@ -49,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -86,7 +86,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -234,7 +234,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bart spritesheet-2.png (1)_0: 2481699991255583452
+      Bart spritesheet-2.png (1)_1: -2500857753811123451
+      Bart spritesheet-2.png (1)_2: -2163572134033749078
+      Bart spritesheet-2.png (1)_3: 3826942615015213868
+      Bart spritesheet-2.png (1)_4: 6543073277847868210
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

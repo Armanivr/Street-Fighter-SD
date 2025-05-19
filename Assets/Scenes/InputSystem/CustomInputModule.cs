@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 public class CustomInputModule : MonoBehaviour
 {
+    private const bool V = false;
     public static CustomInputModule instance;
 
     public Rigidbody2D player1; // Assign your Capsule's Rigidbody2D here.
@@ -179,6 +180,8 @@ public class CustomInputModule : MonoBehaviour
     }
 
     public static bool MenuInUse = false;
+    private bool _HasPressedJump;
+    private bool _HasPressedPunch;
 
     public bool PlayerMenu()
     {

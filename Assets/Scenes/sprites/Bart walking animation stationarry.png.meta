@@ -67,7 +67,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -104,7 +104,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -384,7 +384,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bart walking animation stationarry_0: 4291406509667973134
+      Bart walking animation stationarry_1: 4675232326025343494
+      Bart walking animation stationarry_10: -2001775805904094214
+      Bart walking animation stationarry_2: 4876494942266106278
+      Bart walking animation stationarry_3: 129483475728300942
+      Bart walking animation stationarry_4: -3808183920662995649
+      Bart walking animation stationarry_5: -8531796052382290377
+      Bart walking animation stationarry_6: 386912983029742382
+      Bart walking animation stationarry_7: -1555245057897047111
+      Bart walking animation stationarry_8: -2857163542959025009
+      Bart walking animation stationarry_9: 6702101316007705254
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

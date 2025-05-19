@@ -88,7 +88,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -125,7 +125,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -559,7 +559,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bart kick idea 1_0: 3204613184420104686
+      Bart kick idea 1_1: 8385386720893139021
+      Bart kick idea 1_10: -584659115949252485
+      Bart kick idea 1_11: -3299916374097016764
+      Bart kick idea 1_12: 998338277222753756
+      Bart kick idea 1_13: 2184474023546494358
+      Bart kick idea 1_14: 2056945291563762914
+      Bart kick idea 1_15: 2892035743084575703
+      Bart kick idea 1_16: 5922345331744532546
+      Bart kick idea 1_17: -5493424476832702164
+      Bart kick idea 1_2: 3189661345287732895
+      Bart kick idea 1_3: 3916488790129716915
+      Bart kick idea 1_4: 1161804879014822535
+      Bart kick idea 1_5: -5423974204552826415
+      Bart kick idea 1_6: 4009344727281363661
+      Bart kick idea 1_7: -6944807775469870270
+      Bart kick idea 1_8: -2769876313439268263
+      Bart kick idea 1_9: 5365136865236531228
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
