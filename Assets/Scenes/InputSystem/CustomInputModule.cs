@@ -92,7 +92,7 @@ public class CustomInputModule : MonoBehaviour
             {
                 if (animator2 != null)
                 {
-                    _HasPressedPunch = true
+                    _HasPressedPunch = true;
                     animator2.SetTrigger("Punch");
                     await Task.Delay(1000); 
                     _HasPressedPunch = false;

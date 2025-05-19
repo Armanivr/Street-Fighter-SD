@@ -1,0 +1,567 @@
+fileFormatVersion: 2
+guid: 83d446c310aec2542a3981f1bf508462
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3204613184420104686
+    second: Bart kick idea 1_0
+  - first:
+      213: 8385386720893139021
+    second: Bart kick idea 1_1
+  - first:
+      213: 3189661345287732895
+    second: Bart kick idea 1_2
+  - first:
+      213: 3916488790129716915
+    second: Bart kick idea 1_3
+  - first:
+      213: 1161804879014822535
+    second: Bart kick idea 1_4
+  - first:
+      213: -5423974204552826415
+    second: Bart kick idea 1_5
+  - first:
+      213: 4009344727281363661
+    second: Bart kick idea 1_6
+  - first:
+      213: -6944807775469870270
+    second: Bart kick idea 1_7
+  - first:
+      213: -2769876313439268263
+    second: Bart kick idea 1_8
+  - first:
+      213: 5365136865236531228
+    second: Bart kick idea 1_9
+  - first:
+      213: -584659115949252485
+    second: Bart kick idea 1_10
+  - first:
+      213: -3299916374097016764
+    second: Bart kick idea 1_11
+  - first:
+      213: 998338277222753756
+    second: Bart kick idea 1_12
+  - first:
+      213: 2184474023546494358
+    second: Bart kick idea 1_13
+  - first:
+      213: 2056945291563762914
+    second: Bart kick idea 1_14
+  - first:
+      213: 2892035743084575703
+    second: Bart kick idea 1_15
+  - first:
+      213: 5922345331744532546
+    second: Bart kick idea 1_16
+  - first:
+      213: -5493424476832702164
+    second: Bart kick idea 1_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bart kick idea 1_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 886
+        width: 56
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9c4e366b2197c20800000000000000
+      internalID: 3204613184420104686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart kick idea 1_1
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 886
+        width: 56
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48fc138bc0ee5470800000000000000
+      internalID: 8385386720893139021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart kick idea 1_2
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 885
+        width: 56
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e7baf0814f34c20800000000000000
+      internalID: 3189661345287732895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart kick idea 1_3
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 885
+        width: 56
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3be2b7eddc92a5630800000000000000
+      internalID: 3916488790129716915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart kick idea 1_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 679
+        width: 71
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7828ef7c16f8f1010800000000000000
+      internalID: 1161804879014822535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart kick idea 1_5
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 682
+        width: 71
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d13fbac23c2ab4b0800000000000000
+      internalID: -5423974204552826415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart kick idea 1_6
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 685
+        width: 71
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcae0bb79cd04a730800000000000000
+      internalID: 4009344727281363661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart kick idea 1_7
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 688
+        width: 71
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2436fb59f161f9f90800000000000000
+      internalID: -6944807775469870270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart kick idea 1_8
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 493
+        width: 96
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9521fa91b2c6f89d0800000000000000
+      internalID: -2769876313439268263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart kick idea 1_9
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 493
+        width: 96
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c18b6cf9d8bc47a40800000000000000
+      internalID: 5365136865236531228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart kick idea 1_10
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 493
+        width: 96
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b70a627b1afd2e7f0800000000000000
+      internalID: -584659115949252485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart kick idea 1_11
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 478
+        width: 71
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 448c37d9a875432d0800000000000000
+      internalID: -3299916374097016764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart kick idea 1_12
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 262
+        width: 71
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5a98baf5fcadd00800000000000000
+      internalID: 998338277222753756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart kick idea 1_13
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 253
+        width: 71
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69d9e82fc8fc05e10800000000000000
+      internalID: 2184474023546494358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart kick idea 1_14
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 252
+        width: 56
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4021238dcbb8c10800000000000000
+      internalID: 2056945291563762914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart kick idea 1_15
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 252
+        width: 56
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dbf9488f23922820800000000000000
+      internalID: 2892035743084575703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart kick idea 1_16
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 43
+        width: 56
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24863d783b5603250800000000000000
+      internalID: 5922345331744532546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart kick idea 1_17
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 43
+        width: 56
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2163f13b8f63c3b0800000000000000
+      internalID: -5493424476832702164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
