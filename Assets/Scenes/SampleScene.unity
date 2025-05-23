@@ -1243,7 +1243,7 @@ MonoBehaviour:
   moveSpeed: 5
   jumpForce: 6
   animator1: {fileID: 851593501}
-  animator2: {fileID: 0}
+  animator2: {fileID: 851593501}
   playerInput: {fileID: 0}
 --- !u!4 &2144880279
 Transform:

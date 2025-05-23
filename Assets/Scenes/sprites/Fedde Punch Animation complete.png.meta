@@ -143,12 +143,12 @@ TextureImporter:
       name: Fedde Punch Animation complete_0
       rect:
         serializedVersion: 2
-        x: 81
-        y: 689
-        width: 76
+        x: 80
+        y: 690
+        width: 62
         height: 94
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.40097907, y: 0.4673436}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -166,11 +166,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 289
-        y: 688
+        y: 689
         width: 76
-        height: 93
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 92
+      alignment: 9
+      pivot: {x: 0.3221501, y: 0.4577444}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -188,11 +188,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 499
-        y: 688
+        y: 689
         width: 76
-        height: 93
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 92
+      alignment: 9
+      pivot: {x: 0.3596914, y: 0.45785192}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -210,9 +210,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 81
-        y: 479
+        y: 480
         width: 76
-        height: 94
+        height: 93
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,9 +232,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 289
-        y: 478
+        y: 479
         width: 76
-        height: 93
+        height: 92
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,9 +320,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 501
-        y: 269
+        y: 270
         width: 63
-        height: 94
+        height: 93
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,9 +342,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 81
-        y: 59
+        y: 60
         width: 63
-        height: 94
+        height: 93
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,6 +355,28 @@ TextureImporter:
       bones: []
       spriteID: 123854ac1335bcf4397c5ddaec969bce
       internalID: 533376957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fedde Punch Animation complete_10
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 676
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476a7c8445a48e74aae9e155800e6c5b
+      internalID: 1917655194
       vertices: []
       indices: 
       edges: []
@@ -375,6 +397,7 @@ TextureImporter:
     nameFileIdTable:
       Fedde Punch Animation complete_0: -191324154996792672
       Fedde Punch Animation complete_1: 1445806400
+      Fedde Punch Animation complete_10: 1917655194
       Fedde Punch Animation complete_2: 1974373151
       Fedde Punch Animation complete_3: -208417830
       Fedde Punch Animation complete_4: -563408030

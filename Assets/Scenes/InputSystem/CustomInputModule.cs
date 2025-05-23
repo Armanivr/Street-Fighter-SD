@@ -7,8 +7,8 @@ public class CustomInputModule : MonoBehaviour
 {
     public static CustomInputModule instance;
 
-    public Rigidbody2D player1; // Assign your Capsule's Rigidbody2D here.
-    public Rigidbody2D player2; // Assign your Circle's Rigidbody2D here.
+    public Rigidbody2D player1;
+    public Rigidbody2D player2; 
     public float moveSpeed = 5f;
     public float jumpForce = 10f;
 
@@ -20,7 +20,13 @@ public class CustomInputModule : MonoBehaviour
     private Coroutine killRumbleTimer;
     public PlayerInput playerInput;
     private string currentControlScheme;
-    private string currentActionMap = "Player";
+    private string currentActionMap;
+
+    private bool _HasPressedJumpP1 = false;
+    private bool _HasPressedPunchP1 = false;
+    private bool _HasPressedJumpP2 = false;
+    private bool _HasPressedPunchP2 = false;
+
 
     void Awake()
     {
@@ -44,16 +50,22 @@ public class CustomInputModule : MonoBehaviour
             Vector2 inputP1 = gamepads[0].leftStick.ReadValue();
             player1.linearVelocity = new Vector2(inputP1.x * moveSpeed, player1.linearVelocity.y);
 
-            if (gamepads[0].buttonSouth.wasPressedThisFrame && Mathf.Abs(player1.linearVelocity.y) < 0.01f)
+            // Walk animation for player 1
+            if (animator1 != null && !_HasPressedPunchP1 && !_HasPressedJumpP1)
             {
-                player1.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                bool isWalking = Mathf.Abs(inputP1.x) > 0.1f;
+                animator1.SetBool("Walk", isWalking);
             }
 
-            if (gamepads[0].buttonEast.wasPressedThisFrame)
+            if (gamepads[0].buttonEast.wasPressedThisFrame && !_HasPressedPunchP1 && !_HasPressedJumpP1)
             {
                 if (animator1 != null)
                 {
+                    _HasPressedPunchP1 = true;
                     animator1.SetTrigger("Punch");
+                    animator1.SetBool("Walk", false);
+                    await Task.Delay(500);
+                    _HasPressedPunchP1 = false;
                 }
                 else
                 {
@@ -61,11 +73,16 @@ public class CustomInputModule : MonoBehaviour
                 }
             }
 
-            if (gamepads[0].buttonSouth.wasPressedThisFrame)
+            if (gamepads[0].buttonSouth.wasPressedThisFrame && Mathf.Abs(player1.linearVelocity.y) < 0.01f && !_HasPressedJumpP1 && !_HasPressedPunchP1)
             {
                 if (animator1 != null)
                 {
+                    _HasPressedJumpP1 = true;
+                    player1.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                     animator1.SetTrigger("Jump");
+                    animator1.SetBool("Walk", false);
+                    await Task.Delay(1300);
+                    _HasPressedJumpP1 = false;
                 }
                 else
                 {
@@ -80,23 +97,22 @@ public class CustomInputModule : MonoBehaviour
             Vector2 inputP2 = gamepads[1].leftStick.ReadValue();
             player2.linearVelocity = new Vector2(inputP2.x * moveSpeed, player2.linearVelocity.y);
 
-            _HasPressedJump = false;
-            _HasPressedPunch = false;
-
-            if (gamepads[1].buttonSouth.wasPressedThisFrame && Mathf.Abs(player2.linearVelocity.y) < 0.01f)
+            // Walk animation for player 2
+            if (animator2 != null && !_HasPressedPunchP2 && !_HasPressedJumpP2)
             {
-                player2.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                bool isWalking = Mathf.Abs(inputP2.x) > 0.1f;
+                animator2.SetBool("Walk", isWalking);
             }
 
-            if (gamepads[1].buttonEast.wasPressedThisFrame && _HasPressedPunch == false)
+            if (gamepads[1].buttonEast.wasPressedThisFrame && !_HasPressedPunchP2 && !_HasPressedJumpP2)
             {
                 if (animator2 != null)
                 {
-                    _HasPressedPunch = true
+                    _HasPressedPunchP2 = true;
                     animator2.SetTrigger("Punch");
-                    await Task.Delay(1000); 
-                    _HasPressedPunch = false;
-
+                    animator2.SetBool("Walk", false); // Stop walk anim
+                    await Task.Delay(500);
+                    _HasPressedPunchP2 = false;
                 }
                 else
                 {
@@ -104,27 +120,36 @@ public class CustomInputModule : MonoBehaviour
                 }
             }
 
-            if (gamepads[1].buttonSouth.wasPressedThisFrame)
+            if (gamepads[1].buttonSouth.wasPressedThisFrame && Mathf.Abs(player2.linearVelocity.y) < 0.01f && !_HasPressedJumpP2 && !_HasPressedPunchP2)
             {
                 if (animator2 != null)
                 {
+                    _HasPressedJumpP2 = true;
+                    player2.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                     animator2.SetTrigger("Jump");
+                    animator2.SetBool("Walk", false); // Stop walk anim
+                    await Task.Delay(1300);
+                    _HasPressedJumpP2 = false;
                 }
                 else
                 {
                     Debug.LogWarning("Animator for player 2 is not assigned.");
                 }
+            }
+            else
+            {
+                Debug.LogWarning("Cooldown");
             }
         }
     }
 
     /* ------------------------------------------------------------ Action Map: Player ------------------------------------------------------------ */
 
-    public bool Jump()
-    {
-        float jumpFloat = playerInputActions.Player.Jump.ReadValue<float>();
-        return jumpFloat >= 1;
-    }
+    //public bool Jump()
+    //{
+    //    float jumpFloat = playerInputActions.Player.Jump.ReadValue<float>();
+    //    return jumpFloat >= 1;
+    //}
 
     public bool Punch()
     {

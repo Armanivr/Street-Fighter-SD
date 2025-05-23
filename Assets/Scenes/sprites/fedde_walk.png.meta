@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: a4766e3ac993cbb40a7a81dccf74c2ab
+guid: 25e4b10f042fe5d49b8bb4fa53441903
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4263664252206218689
-    second: Fedde Jump animation spritesheet 1_0
+      213: -492316211636582701
+    second: fedde_walk_0
   - first:
-      213: -7335309822352876742
-    second: Fedde Jump animation spritesheet 1_1
+      213: 1764755265691630916
+    second: fedde_walk_1
   - first:
-      213: -7306742064455381976
-    second: Fedde Jump animation spritesheet 1_2
+      213: 1578610820421138401
+    second: fedde_walk_2
   - first:
-      213: -3042353905974261920
-    second: Fedde Jump animation spritesheet 1_3
+      213: -8182026645590715610
+    second: fedde_walk_3
+  - first:
+      213: 2072869493709312438
+    second: fedde_walk_4
+  - first:
+      213: 5077775312275189033
+    second: fedde_walk_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -122,89 +128,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fedde Jump animation spritesheet 1_0
+      name: fedde_walk_0
       rect:
         serializedVersion: 2
-        x: 75
-        y: 267
-        width: 59
-        height: 98
+        x: 39
+        y: 251
+        width: 42
+        height: 97
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3287b5d3fb64d4c0800000000000000
-      internalID: -4263664252206218689
+      spriteID: 3d64c309301fa29f0800000000000000
+      internalID: -492316211636582701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fedde Jump animation spritesheet 1_1
+      name: fedde_walk_1
       rect:
         serializedVersion: 2
-        x: 292
-        y: 261
-        width: 59
-        height: 99
+        x: 157
+        y: 252
+        width: 46
+        height: 97
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3b1939a49eb33a90800000000000000
-      internalID: -7335309822352876742
+      spriteID: 44dbc07609bad7810800000000000000
+      internalID: 1764755265691630916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fedde Jump animation spritesheet 1_2
+      name: fedde_walk_2
       rect:
         serializedVersion: 2
-        x: 87
-        y: 56
-        width: 59
-        height: 99
+        x: 35
+        y: 132
+        width: 50
+        height: 97
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 82c8bbe1ecc399a90800000000000000
-      internalID: -7306742064455381976
+      spriteID: 1e73ac56d2a58e510800000000000000
+      internalID: 1578610820421138401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fedde Jump animation spritesheet 1_3
+      name: fedde_walk_3
       rect:
         serializedVersion: 2
-        x: 296
-        y: 40
-        width: 59
-        height: 99
+        x: 160
+        y: 132
+        width: 39
+        height: 97
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 067c169dd3367c5d0800000000000000
-      internalID: -3042353905974261920
+      spriteID: 623d8c6bd1a937e80800000000000000
+      internalID: -8182026645590715610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fedde_walk_4
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 12
+        width: 46
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1994e62df44cc10800000000000000
+      internalID: 2072869493709312438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fedde_walk_5
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 12
+        width: 51
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d29694eb1e77640800000000000000
+      internalID: 5077775312275189033
       vertices: []
       indices: 
       edges: []
@@ -213,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ea3979702efac4d409006a8fd8a0402a
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -222,11 +272,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Fedde Jump animation spritesheet 1_0: -4263664252206218689
-      Fedde Jump animation spritesheet 1_1: -7335309822352876742
-      Fedde Jump animation spritesheet 1_2: -7306742064455381976
-      Fedde Jump animation spritesheet 1_3: -3042353905974261920
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
