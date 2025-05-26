@@ -136,10 +136,10 @@ public class CustomInputModule : MonoBehaviour
                     Debug.LogWarning("Animator for player 2 is not assigned.");
                 }
             }
-            else
-            {
-                Debug.LogWarning("Cooldown");
-            }
+            //else
+            //{
+            //    Debug.LogWarning("Cooldown");
+            //}
         }
     }
 

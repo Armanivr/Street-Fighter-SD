@@ -1,25 +1,37 @@
 fileFormatVersion: 2
-guid: 25e4b10f042fe5d49b8bb4fa53441903
+guid: 3e4b36e978103394b93a3d9f696d94cd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -492316211636582701
-    second: fedde_walk_0
+      213: -3187591399860359322
+    second: Bart idle animation_0
   - first:
-      213: 1764755265691630916
-    second: fedde_walk_1
+      213: -2605425739276579197
+    second: Bart idle animation_1
   - first:
-      213: 1578610820421138401
-    second: fedde_walk_2
+      213: -7965113469798780197
+    second: Bart idle animation_2
   - first:
-      213: -8182026645590715610
-    second: fedde_walk_3
+      213: 4963751796279282575
+    second: Bart idle animation_3
   - first:
-      213: 2072869493709312438
-    second: fedde_walk_4
+      213: -9198784136275446574
+    second: Bart idle animation_4
   - first:
-      213: 5077775312275189033
-    second: fedde_walk_5
+      213: 8464492323815365865
+    second: Bart idle animation_5
+  - first:
+      213: -4692097652740170919
+    second: Bart idle animation_6
+  - first:
+      213: 2824537385042893708
+    second: Bart idle animation_7
+  - first:
+      213: 3932191040130196468
+    second: Bart idle animation_8
+  - first:
+      213: 9023157520043821913
+    second: Bart idle animation_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,13 +140,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fedde_walk_0
+      name: Bart idle animation_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 251
-        width: 42
-        height: 97
+        x: 77
+        y: 687
+        width: 56
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d64c309301fa29f0800000000000000
-      internalID: -492316211636582701
+      spriteID: 66fab3aa28663c3d0800000000000000
+      internalID: -3187591399860359322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fedde_walk_1
+      name: Bart idle animation_1
       rect:
         serializedVersion: 2
-        x: 157
-        y: 252
-        width: 46
-        height: 97
+        x: 287
+        y: 687
+        width: 56
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 44dbc07609bad7810800000000000000
-      internalID: 1764755265691630916
+      spriteID: 38e82c1281ba7dbd0800000000000000
+      internalID: -2605425739276579197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fedde_walk_2
+      name: Bart idle animation_2
       rect:
         serializedVersion: 2
-        x: 35
-        y: 132
-        width: 50
-        height: 97
+        x: 497
+        y: 687
+        width: 56
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e73ac56d2a58e510800000000000000
-      internalID: 1578610820421138401
+      spriteID: bd2f6fc008b367190800000000000000
+      internalID: -7965113469798780197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fedde_walk_3
+      name: Bart idle animation_3
       rect:
         serializedVersion: 2
-        x: 160
-        y: 132
-        width: 39
-        height: 97
+        x: 77
+        y: 477
+        width: 56
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,19 +221,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 623d8c6bd1a937e80800000000000000
-      internalID: -8182026645590715610
+      spriteID: f8b0f6aa5f9c2e440800000000000000
+      internalID: 4963751796279282575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fedde_walk_4
+      name: Bart idle animation_4
       rect:
         serializedVersion: 2
-        x: 37
-        y: 12
-        width: 46
+        x: 287
+        y: 477
+        width: 57
         height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -231,19 +243,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b1994e62df44cc10800000000000000
-      internalID: 2072869493709312438
+      spriteID: 2d4bdc7b09a575080800000000000000
+      internalID: -9198784136275446574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fedde_walk_5
+      name: Bart idle animation_5
       rect:
         serializedVersion: 2
-        x: 154
-        y: 12
-        width: 51
+        x: 497
+        y: 477
+        width: 57
         height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -253,8 +265,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 92d29694eb1e77640800000000000000
-      internalID: 5077775312275189033
+      spriteID: 9ec1905fbeae77570800000000000000
+      internalID: 8464492323815365865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart idle animation_6
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 267
+        width: 56
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95b5afc6b0252eeb0800000000000000
+      internalID: -4692097652740170919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart idle animation_7
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 267
+        width: 56
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8bda4269c5c23720800000000000000
+      internalID: 2824537385042893708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart idle animation_8
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 267
+        width: 56
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f32fe7dae2f19630800000000000000
+      internalID: 3932191040130196468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart idle animation_9
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 57
+        width: 56
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95b4b9e25f1b83d70800000000000000
+      internalID: 9023157520043821913
       vertices: []
       indices: 
       edges: []
@@ -272,13 +372,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      fedde_walk_0: -492316211636582701
-      fedde_walk_1: 1764755265691630916
-      fedde_walk_2: 1578610820421138401
-      fedde_walk_3: -8182026645590715610
-      fedde_walk_4: 2072869493709312438
-      fedde_walk_5: 5077775312275189033
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
