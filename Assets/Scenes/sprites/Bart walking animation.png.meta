@@ -547,7 +547,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bart walking animation_0: -2995426004937372862
+      Bart walking animation_1: 3334633400503915130
+      Bart walking animation_10: -36133582176367796
+      Bart walking animation_11: 8793718181217741522
+      Bart walking animation_12: 1939144906802911423
+      Bart walking animation_13: 6953925729221840637
+      Bart walking animation_14: 2557581356278704736
+      Bart walking animation_15: -9111043137591664770
+      Bart walking animation_16: 4772814087892389649
+      Bart walking animation_2: 8411217505574184705
+      Bart walking animation_3: 7200289685048576062
+      Bart walking animation_4: -1817185433324020540
+      Bart walking animation_5: -7555671828604235516
+      Bart walking animation_6: -2574512441548831429
+      Bart walking animation_7: -8381594910414717763
+      Bart walking animation_8: 4628316502899580383
+      Bart walking animation_9: 7595301258263373605
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
