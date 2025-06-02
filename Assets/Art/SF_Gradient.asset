@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SF_Gradient
   m_EditorClassIdentifier: 
   colorMode: 2
-  topLeft: {r: 1, g: 0.9880785, b: 0, a: 1}
-  topRight: {r: 1, g: 0.9880785, b: 0, a: 1}
+  topLeft: {r: 1, g: 0.9882353, b: 0, a: 1}
+  topRight: {r: 1, g: 0.9882353, b: 0, a: 1}
   bottomLeft: {r: 1, g: 0.8391529, b: 0, a: 1}
   bottomRight: {r: 1, g: 0.8391529, b: 0, a: 1}
