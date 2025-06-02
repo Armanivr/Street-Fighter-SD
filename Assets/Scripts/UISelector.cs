@@ -1,5 +1,5 @@
-using UnityEngine.EventSystems;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using System.Collections;
 
 public class UISelector : MonoBehaviour
@@ -11,7 +11,7 @@ public class UISelector : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Optional: if you want it to persist between scenes
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -19,70 +19,17 @@ public class UISelector : MonoBehaviour
         }
     }
 
-    public void SetSelected(GameObject obj)
+    // Method to set focus after one frame
+    public IEnumerator SetSelectedAfterFrame(GameObject obj)
     {
-        if (obj == null)
-        {
-            Debug.LogWarning("Tried to select a null GameObject");
-            return;
-        }
-
-        StartCoroutine(DelayedSelect(obj));
-    }
-
-    public void SetSelectedAfterFrame(GameObject obj)
-    {
-        if (obj == null)
-        {
-            Debug.LogWarning("Tried to select a null GameObject");
-            return;
-        }
-
-        StartCoroutine(SelectAfterEndOfFrame(obj));
-    }
-
-    public IEnumerator WaitForMenuTransitionAndSelect(GameObject selectedObject)
-    {
-        if (selectedObject == null)
-        {
-            Debug.LogWarning("Tried to select a null GameObject after menu transition");
-            yield break;
-        }
-
-        // Wait for the next frame to ensure the UI is fully active
-        yield return new WaitForEndOfFrame();
-
-        // Now set the selected UI element
-        SetSelected(selectedObject);
-    }
-
-    private IEnumerator DelayedSelect(GameObject obj)
-    {
-        yield return null; // Wait one frame
-
-        if (EventSystem.current == null)
-        {
-            Debug.LogWarning("No EventSystem found in scene");
-            yield break;
-        }
-
-        EventSystem.current.SetSelectedGameObject(null);
+        yield return null; // wait one frame
         EventSystem.current.SetSelectedGameObject(obj);
-        Debug.Log("Selected UI element: " + obj.name);
     }
 
-    private IEnumerator SelectAfterEndOfFrame(GameObject obj)
+    // Method to wait briefly then set focus
+    public IEnumerator WaitForMenuTransitionAndSelect(GameObject obj)
     {
-        yield return new WaitForEndOfFrame(); // Wait until the end of the frame
-
-        if (EventSystem.current == null)
-        {
-            Debug.LogWarning("No EventSystem found in scene");
-            yield break;
-        }
-
-        EventSystem.current.SetSelectedGameObject(null);
+        yield return new WaitForSeconds(0.1f); // adjust delay as needed
         EventSystem.current.SetSelectedGameObject(obj);
-        Debug.Log("Selected after full frame: " + obj.name);
     }
 }

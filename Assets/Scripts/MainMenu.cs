@@ -1,45 +1,50 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.InputSystem;
-using System.Collections;
-using System.Collections.Generic; // Needed for Dictionary
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class MenuManager : MonoBehaviour
 {
+    public static MenuManager Instance { get; private set; }
+
     [Header("Menus")]
     public GameObject mainMenu;
     public GameObject optionsMenu;
-    public GameObject characterSelectionMenu; // The character selection UI
+    public GameObject characterSelectionMenu;
 
     [Header("First Selected UI Elements")]
     public GameObject playFirstSelected;
     public GameObject optionsFirstSelected;
-    public GameObject characterFirstSelected; // Focus for character selection
+    public GameObject characterFirstSelected;
 
     [Header("Character Display")]
     public CharacterSelectionDisplay characterDisplay; // Drag your CharacterSelectionDisplay GameObject here
 
-    // Map character names to sprites
+    [Header("Character Mapping")]
     public List<CharacterSpriteMapping> characterMappings;
 
     private Dictionary<string, Sprite> characterDictionary;
 
-    // List of character sprite mappings - assign in inspector
-    public List<CharacterSpriteMapping> characterSprites;
-
-    // UI Image component where the sprite will be displayed
+    [Header("UI Elements to show selected players")]
     public Image displayImage;
+    public Text displayText;
 
-    private PlayerInput playerInput;
+    private enum Player { Player1, Player2 }
+    private Player currentPlayer = Player.Player1;
+
+    public Sprite selectedSpriteP1;
+    public string selectedNameP1;
+    public Sprite selectedSpriteP2;
+    public string selectedNameP2;
 
     private void Awake()
     {
-        playerInput = GetComponent<PlayerInput>();
-        if (playerInput == null)
+        if (Instance != null && Instance != this)
         {
-            Debug.LogWarning("No PlayerInput component found on MenuManager. Add one manually in the Inspector.");
+            Destroy(gameObject);
+            return;
         }
+        Instance = this;
 
         // Initialize dictionary
         characterDictionary = new Dictionary<string, Sprite>();
@@ -50,50 +55,13 @@ public class MenuManager : MonoBehaviour
                 characterDictionary.Add(mapping.characterName, mapping.characterSprite);
             }
         }
-    }
-
-    private void OnEnable()
-    {
-        if (playerInput != null)
-        {
-            playerInput.actions["Cancel"].performed += OnCancel;
-        }
-    }
-
-    private void OnDisable()
-    {
-        if (playerInput != null)
-        {
-            playerInput.actions["Cancel"].performed -= OnCancel;
-        }
+        ShowMainMenu();
     }
 
     private void Start()
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-
-        // Initialize all menus to inactive
-        mainMenu.SetActive(false);
-        optionsMenu.SetActive(false);
-        if (characterSelectionMenu != null)
-            characterSelectionMenu.SetActive(false);
-
-        // Show the main menu at start
-        ShowMainMenu();
-    }
-
-    private void OnCancel(UnityEngine.InputSystem.InputAction.CallbackContext context)
-    {
-        // Cancel from options or character selection returns to main menu
-        if (optionsMenu.activeSelf)
-        {
-            ShowMainMenu();
-        }
-        else if (characterSelectionMenu != null && characterSelectionMenu.activeSelf)
-        {
-            ShowMainMenu();
-        }
     }
 
     public void ShowMainMenu()
@@ -102,9 +70,7 @@ public class MenuManager : MonoBehaviour
         optionsMenu.SetActive(false);
         if (characterSelectionMenu != null)
             characterSelectionMenu.SetActive(false);
-
-        Debug.Log("Showing Main Menu");
-        UISelector.Instance.SetSelectedAfterFrame(playFirstSelected);
+        StartCoroutine(UISelector.Instance.SetSelectedAfterFrame(playFirstSelected));
     }
 
     public void ShowOptionsMenu()
@@ -113,92 +79,101 @@ public class MenuManager : MonoBehaviour
         optionsMenu.SetActive(true);
         if (characterSelectionMenu != null)
             characterSelectionMenu.SetActive(false);
-
-        Debug.Log("Showing Options Menu");
-        UISelector.Instance.StartCoroutine(
-            UISelector.Instance.WaitForMenuTransitionAndSelect(optionsFirstSelected)
-        );
+        StartCoroutine(UISelector.Instance.WaitForMenuTransitionAndSelect(optionsFirstSelected));
     }
 
-    // Called when "Play" button is pressed
     public void StartCharacterSelection()
     {
-        Debug.Log("StartCharacterSelection called");
         mainMenu.SetActive(false);
         if (characterSelectionMenu != null)
         {
             characterSelectionMenu.SetActive(true);
-            Debug.Log("Character selection menu activated");
-            UISelector.Instance.StartCoroutine(
-                UISelector.Instance.WaitForMenuTransitionAndSelect(characterFirstSelected)
-            );
+            currentPlayer = Player.Player1;
+            selectedSpriteP1 = null;
+            selectedNameP1 = "";
+            selectedSpriteP2 = null;
+            selectedNameP2 = "";
+            Debug.Log("Player 1, please select your character");
+            StartCoroutine(UISelector.Instance.WaitForMenuTransitionAndSelect(characterFirstSelected));
         }
-        else
+    }
+
+    public void RegisterCharacterSelection(string characterName)
+    {
+        if (!characterDictionary.ContainsKey(characterName))
         {
-            Debug.LogError("Character Selection Menu not assigned!");
+            Debug.LogWarning("Character not found in dictionary: " + characterName);
+            return;
         }
-    }
 
-    // Called when a character is selected (via button)
-    public void SelectCharacter(string characterName)
-    {
-        Debug.Log("Attempting to select character: " + characterName);
+        Sprite sprite = characterDictionary[characterName];
 
-        // Find the mapping for the given character name
-        var mapping = characterSprites.Find(c => c.characterName == characterName);
-
-        if (mapping != null)
+        if (currentPlayer == Player.Player1)
         {
-            Debug.Log("Mapping found for character: " + characterName);
-
-            if (mapping.characterSprite != null)
-            {
-                Debug.Log("Found sprite for " + characterName);
-                displayImage.sprite = mapping.characterSprite;
-            }
-            else
-            {
-                Debug.LogWarning("No sprite assigned for character: " + characterName);
-            }
+            selectedSpriteP1 = sprite;
+            selectedNameP1 = characterName;
+            Debug.Log("Player 1 selected: " + characterName);
+            // Update display
+            characterDisplay.UpdatePlayer1(sprite, characterName);
+            // Prompt Player 2
+            currentPlayer = Player.Player2;
+            Debug.Log("Player 2, please select your character");
+            StartCoroutine(UISelector.Instance.WaitForMenuTransitionAndSelect(characterFirstSelected));
         }
-        else
+        else if (currentPlayer == Player.Player2)
         {
-            Debug.LogWarning("No mapping found for character: " + characterName);
+            selectedSpriteP2 = sprite;
+            selectedNameP2 = characterName;
+            Debug.Log("Player 2 selected: " + characterName);
+            // Update display
+            characterDisplay.UpdatePlayer2(sprite, characterName);
+            Debug.Log("Both players have selected their characters!");
+            // You can enable a "Start Game" button here in your UI
         }
     }
 
-    // Called when "Confirm" button is pressed after selecting a character
-    public void ConfirmCharacterSelection()
+    // This method is called when the player clicks the start button
+    public void ConfirmSelections()
     {
-        // Load the main game scene
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
-    }
-
-    public void OnCharacterButtonClicked(Sprite characterSprite, int playerNumber)
-    {
-        Debug.Log($"Player {playerNumber} selected sprite: {characterSprite.name}");
-        // Call the display update
-        if (characterDisplay != null)
+        if (string.IsNullOrEmpty(selectedNameP1) || string.IsNullOrEmpty(selectedNameP2))
         {
-            characterDisplay.OnCharacterSelected(playerNumber, characterSprite);
+            Debug.LogWarning("Both players must select characters before starting.");
+            return;
         }
+        Debug.Log("Starting game with selections:");
+        Debug.Log("P1: " + selectedNameP1);
+        Debug.Log("P2: " + selectedNameP2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    // Alternatively, you can use this method for "Play" button to go directly to game
-    public void PlayGame()
+    public void ResetSelections()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
+        selectedSpriteP1 = null;
+        selectedNameP1 = "";
+        selectedSpriteP2 = null;
+        selectedNameP2 = "";
+        currentPlayer = Player.Player1;
+        // Reset display
+        characterDisplay.UpdatePlayer1(null, "Player 1");
+        characterDisplay.UpdatePlayer2(null, "Player 2");
     }
-
-    public void QuitGame()
+    public void StartGame()
     {
-        Application.Quit();
+        // Ensure both players have selected characters
+        if (string.IsNullOrEmpty(selectedNameP1) || string.IsNullOrEmpty(selectedNameP2))
+        {
+            Debug.LogWarning("Cannot start game: both players must select characters");
+            return;
+        }
+        Debug.Log("Starting game scene...");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-}
 
-[System.Serializable]
-public class CharacterSpriteMapping
-{
-    public string characterName; // Name used in button (e.g., in the button's OnClick)
-    public Sprite characterSprite; // Corresponding sprite
+
+    [System.Serializable]
+    public class CharacterSpriteMapping
+    {
+        public string characterName;
+        public Sprite characterSprite;
+    }
 }
