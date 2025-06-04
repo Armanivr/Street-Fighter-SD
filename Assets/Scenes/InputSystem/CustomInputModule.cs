@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Threading.Tasks;
+using System;
 
 public class CustomInputModule : MonoBehaviour
 {
@@ -22,6 +23,14 @@ public class CustomInputModule : MonoBehaviour
     private string currentControlScheme;
     private string currentActionMap;
 
+    public Transform attackPointP1;
+    public Transform attackPointP2;
+    public float attackRange = 0.5f;
+    public LayerMask player2Layer;
+    public LayerMask player1Layer;
+
+    public int attackDamage = 5;
+
     private bool _HasPressedJumpP1 = false;
     private bool _HasPressedPunchP1 = false;
     private bool _HasPressedJumpP2 = false;
@@ -39,6 +48,8 @@ public class CustomInputModule : MonoBehaviour
         playerInputActions = new PlayerInputActions();
         playerInputActions.Player.Enable();
     }
+
+
 
     private async void Update()
     {
@@ -66,11 +77,28 @@ public class CustomInputModule : MonoBehaviour
                     animator1.SetBool("Walk", false);
                     await Task.Delay(500);
                     _HasPressedPunchP1 = false;
+
+                        Debug.Log("Attack");
+                    Attack();
                 }
                 else
                 {
                     Debug.LogWarning("Animator for player 1 is not assigned.");
                 }
+                void Attack()
+                {
+                    // Detecteer vijanden binnen het bereik van de aanval
+                    Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPointP1.position, attackRange, player2Layer);
+
+                    // Raak ze
+                    foreach (Collider2D enemy in hitEnemies)
+                    {
+                        enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+                    }
+
+                }
+
+
             }
 
             if (gamepads[0].buttonSouth.wasPressedThisFrame && Mathf.Abs(player1.linearVelocity.y) < 0.01f && !_HasPressedJumpP1 && !_HasPressedPunchP1)
@@ -106,17 +134,32 @@ public class CustomInputModule : MonoBehaviour
 
             if (gamepads[1].buttonEast.wasPressedThisFrame && !_HasPressedPunchP2 && !_HasPressedJumpP2)
             {
-                if (animator2 != null)
+                if (animator1 != null)
                 {
-                    _HasPressedPunchP2 = true;
+                    _HasPressedPunchP1 = true;
                     animator2.SetTrigger("Punch");
-                    animator2.SetBool("Walk", false); // Stop walk anim
+                    animator2.SetBool("Walk", false);
                     await Task.Delay(500);
-                    _HasPressedPunchP2 = false;
+                    _HasPressedPunchP1 = false;
+
+                    Debug.Log("Attack");
+                    Attack();
                 }
                 else
                 {
-                    Debug.LogWarning("Animator for player 2 is not assigned.");
+                    Debug.LogWarning("Animator for player 1 is not assigned.");
+                }
+                void Attack()
+                {
+                    // Detecteer vijanden binnen het bereik van de aanval
+                    Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPointP2.position, attackRange, player1Layer);
+
+                    // Raak ze
+                    foreach (Collider2D enemy in hitEnemies)
+                    {
+                        enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+                    }
+
                 }
             }
 
@@ -145,11 +188,11 @@ public class CustomInputModule : MonoBehaviour
 
     /* ------------------------------------------------------------ Action Map: Player ------------------------------------------------------------ */
 
-    //public bool Jump()
-    //{
-    //    float jumpFloat = playerInputActions.Player.Jump.ReadValue<float>();
-    //    return jumpFloat >= 1;
-    //}
+    public bool Jump()
+    {
+        float jumpFloat = playerInputActions.Player.Jump.ReadValue<float>();
+        return jumpFloat >= 1;
+    }
 
     public bool Punch()
     {
@@ -254,4 +297,8 @@ public class CustomInputModule : MonoBehaviour
         currentActionMap = "Player";
         playerInputActions.Player.Enable();
     }
+
+
+
 }
+
