@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: d2a69fe653f07ac439b5b7487fe2ffc3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2995426004937372862
+    second: Bart walking animation_0
+  - first:
+      213: 3334633400503915130
+    second: Bart walking animation_1
+  - first:
+      213: 8411217505574184705
+    second: Bart walking animation_2
+  - first:
+      213: 7200289685048576062
+    second: Bart walking animation_3
+  - first:
+      213: -1817185433324020540
+    second: Bart walking animation_4
+  - first:
+      213: -7555671828604235516
+    second: Bart walking animation_5
+  - first:
+      213: -2574512441548831429
+    second: Bart walking animation_6
+  - first:
+      213: -8381594910414717763
+    second: Bart walking animation_7
+  - first:
+      213: 4628316502899580383
+    second: Bart walking animation_8
+  - first:
+      213: 7595301258263373605
+    second: Bart walking animation_9
+  - first:
+      213: -36133582176367796
+    second: Bart walking animation_10
+  - first:
+      213: 8793718181217741522
+    second: Bart walking animation_11
+  - first:
+      213: 1939144906802911423
+    second: Bart walking animation_12
+  - first:
+      213: 6953925729221840637
+    second: Bart walking animation_13
+  - first:
+      213: 2557581356278704736
+    second: Bart walking animation_14
+  - first:
+      213: -9111043137591664770
+    second: Bart walking animation_15
+  - first:
+      213: 4772814087892389649
+    second: Bart walking animation_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bart walking animation_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 662
+        width: 37
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b8db04beb1e66d0800000000000000
+      internalID: -2995426004937372862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart walking animation_1
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 662
+        width: 50
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72503df86ff64e20800000000000000
+      internalID: 3334633400503915130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart walking animation_2
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 662
+        width: 64
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 107eb4cb1c5aab470800000000000000
+      internalID: 8411217505574184705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart walking animation_3
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 662
+        width: 65
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e38ca3dd1519ce360800000000000000
+      internalID: 7200289685048576062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart walking animation_4
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 504
+        width: 52
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cc15bbe97f08c6e0800000000000000
+      internalID: -1817185433324020540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart walking animation_5
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 504
+        width: 34
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4015e98e08cd42790800000000000000
+      internalID: -7555671828604235516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart walking animation_6
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 504
+        width: 41
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3588a3239e754cd0800000000000000
+      internalID: -2574512441548831429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart walking animation_7
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 504
+        width: 53
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc328926d79eab80800000000000000
+      internalID: -8381594910414717763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart walking animation_8
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 346
+        width: 64
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdd586766551b3040800000000000000
+      internalID: 4628316502899580383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart walking animation_9
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 346
+        width: 53
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 527add4b04ee76960800000000000000
+      internalID: 7595301258263373605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart walking animation_10
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 346
+        width: 33
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4b4aedc2b0af7ff0800000000000000
+      internalID: -36133582176367796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart walking animation_11
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 345
+        width: 35
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2daa06e3810990a70800000000000000
+      internalID: 8793718181217741522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart walking animation_12
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 187
+        width: 50
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8def9c40a39ea10800000000000000
+      internalID: 1939144906802911423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart walking animation_13
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 187
+        width: 64
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe87b47b9e418060800000000000000
+      internalID: 6953925729221840637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart walking animation_14
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 186
+        width: 65
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a672161ba5e7320800000000000000
+      internalID: 2557581356278704736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart walking animation_15
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 186
+        width: 52
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f969ae9821f8180800000000000000
+      internalID: -9111043137591664770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart walking animation_16
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 28
+        width: 34
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f4ecf10217c3240800000000000000
+      internalID: 4772814087892389649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bart walking animation_0: -2995426004937372862
+      Bart walking animation_1: 3334633400503915130
+      Bart walking animation_10: -36133582176367796
+      Bart walking animation_11: 8793718181217741522
+      Bart walking animation_12: 1939144906802911423
+      Bart walking animation_13: 6953925729221840637
+      Bart walking animation_14: 2557581356278704736
+      Bart walking animation_15: -9111043137591664770
+      Bart walking animation_16: 4772814087892389649
+      Bart walking animation_2: 8411217505574184705
+      Bart walking animation_3: 7200289685048576062
+      Bart walking animation_4: -1817185433324020540
+      Bart walking animation_5: -7555671828604235516
+      Bart walking animation_6: -2574512441548831429
+      Bart walking animation_7: -8381594910414717763
+      Bart walking animation_8: 4628316502899580383
+      Bart walking animation_9: 7595301258263373605
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
