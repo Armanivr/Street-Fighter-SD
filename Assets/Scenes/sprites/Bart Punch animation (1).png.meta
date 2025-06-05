@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: a4997c1c433743c42b534830a969c3d1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7729332576103345221
+    second: Bart Punch animation (1)_0
+  - first:
+      213: -6470838147093824300
+    second: Bart Punch animation (1)_1
+  - first:
+      213: -4744738521006235070
+    second: Bart Punch animation (1)_2
+  - first:
+      213: 148049452823584952
+    second: Bart Punch animation (1)_3
+  - first:
+      213: 5242090232427743248
+    second: Bart Punch animation (1)_4
+  - first:
+      213: 2401760671259473424
+    second: Bart Punch animation (1)_5
+  - first:
+      213: -7755458007105222731
+    second: Bart Punch animation (1)_6
+  - first:
+      213: 2488426333236430423
+    second: Bart Punch animation (1)_7
+  - first:
+      213: 2396972145691220430
+    second: Bart Punch animation (1)_8
+  - first:
+      213: -6983718958594765
+    second: Bart Punch animation (1)_9
+  - first:
+      213: -1482460257204023248
+    second: Bart Punch animation (1)_10
+  - first:
+      213: 7454709084044608766
+    second: Bart Punch animation (1)_11
+  - first:
+      213: 5461873099503225713
+    second: Bart Punch animation (1)_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bart Punch animation (1)_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 687
+        width: 66
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54cae75b60b144b60800000000000000
+      internalID: 7729332576103345221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart Punch animation (1)_1
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 687
+        width: 86
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dcfc6b3df6f236a0800000000000000
+      internalID: -6470838147093824300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart Punch animation (1)_2
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 687
+        width: 86
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 242af4f247d472eb0800000000000000
+      internalID: -4744738521006235070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart Punch animation (1)_3
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 687
+        width: 66
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0adb4613afd0200800000000000000
+      internalID: 148049452823584952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart Punch animation (1)_4
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 477
+        width: 66
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0188668ea45afb840800000000000000
+      internalID: 5242090232427743248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart Punch animation (1)_5
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 477
+        width: 86
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016bcedfa94c45120800000000000000
+      internalID: 2401760671259473424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart Punch animation (1)_6
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 477
+        width: 66
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b7c80068041f5490800000000000000
+      internalID: -7755458007105222731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart Punch animation (1)_7
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 477
+        width: 66
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 756094ad09aa88220800000000000000
+      internalID: 2488426333236430423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart Punch animation (1)_8
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 267
+        width: 76
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec95e608771c34120800000000000000
+      internalID: 2396972145691220430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart Punch animation (1)_9
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 267
+        width: 117
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3350348385037eff0800000000000000
+      internalID: -6983718958594765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart Punch animation (1)_10
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 267
+        width: 117
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03058bf104e3d6be0800000000000000
+      internalID: -1482460257204023248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart Punch animation (1)_11
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 267
+        width: 76
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef44b5a4a62747760800000000000000
+      internalID: 7454709084044608766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bart Punch animation (1)_12
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 57
+        width: 66
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17bc62055a87ccb40800000000000000
+      internalID: 5461873099503225713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bart Punch animation (1)_0: 7729332576103345221
+      Bart Punch animation (1)_1: -6470838147093824300
+      Bart Punch animation (1)_10: -1482460257204023248
+      Bart Punch animation (1)_11: 7454709084044608766
+      Bart Punch animation (1)_12: 5461873099503225713
+      Bart Punch animation (1)_2: -4744738521006235070
+      Bart Punch animation (1)_3: 148049452823584952
+      Bart Punch animation (1)_4: 5242090232427743248
+      Bart Punch animation (1)_5: 2401760671259473424
+      Bart Punch animation (1)_6: -7755458007105222731
+      Bart Punch animation (1)_7: 2488426333236430423
+      Bart Punch animation (1)_8: 2396972145691220430
+      Bart Punch animation (1)_9: -6983718958594765
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
