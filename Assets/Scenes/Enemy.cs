@@ -26,20 +26,15 @@ public class Enemy : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+
             Die();
         }
     }
 
-    void Die()
+    public void Die()
     {
         animator.SetTrigger("IsDead");
         GetComponent<Collider2D>().enabled = false;
-
-        // Disable player input
-        if (playerInput != null)
-            playerInput.enabled = false;
-
-        // Optionally disable this script or others
         this.enabled = false;
     }
 }

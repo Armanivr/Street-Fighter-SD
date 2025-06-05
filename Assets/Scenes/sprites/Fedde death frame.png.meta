@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fedde death frame_0: 7646543780834968887
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

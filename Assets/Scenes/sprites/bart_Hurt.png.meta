@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bart_Hurt_0: 2553748596250727029
+      bart_Hurt_1: -4853916569243335335
+      bart_Hurt_2: -5843875268591713173
+      bart_Hurt_3: -1179342848316077922
+      bart_Hurt_4: 5004541983966579964
+      bart_Hurt_5: -4444917699511009204
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

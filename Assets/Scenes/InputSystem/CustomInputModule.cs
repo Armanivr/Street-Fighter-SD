@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Threading.Tasks;
 using System;
+using UnityEditor.SearchService;
+using System.Reflection;
 
 public class CustomInputModule : MonoBehaviour
 {
@@ -11,7 +13,7 @@ public class CustomInputModule : MonoBehaviour
     public Rigidbody2D player1;
     public Rigidbody2D player2; 
     public float moveSpeed = 5f;
-    public float jumpForce = 10f;
+    public float jumpForce = 5f;
 
     [SerializeField] private Animator animator1; // Animator for player 1
     [SerializeField] private Animator animator2; // Animator for player 2
@@ -49,7 +51,7 @@ public class CustomInputModule : MonoBehaviour
         playerInputActions.Player.Enable();
     }
 
-
+    //more code above
 
     private async void Update()
     {
@@ -67,6 +69,7 @@ public class CustomInputModule : MonoBehaviour
                 bool isWalking = Mathf.Abs(inputP1.x) > 0.1f;
                 animator1.SetBool("Walk", isWalking);
             }
+            //more code
 
             if (gamepads[0].buttonEast.wasPressedThisFrame && !_HasPressedPunchP1 && !_HasPressedJumpP1)
             {
