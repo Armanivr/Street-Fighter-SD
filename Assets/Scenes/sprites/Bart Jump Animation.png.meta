@@ -622,7 +622,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bart Jump Animation_0: -2767543231440606476
+      Bart Jump Animation_1: -3715494215317136927
+      Bart Jump Animation_10: -4826787613623336300
+      Bart Jump Animation_11: 2856004098010691196
+      Bart Jump Animation_12: 3600125759098894726
+      Bart Jump Animation_13: -4672141354646031803
+      Bart Jump Animation_14: 979452003972591872
+      Bart Jump Animation_15: 2419947756372696649
+      Bart Jump Animation_16: 1089190830510396831
+      Bart Jump Animation_17: -3951165934777673554
+      Bart Jump Animation_18: -1182656166032965089
+      Bart Jump Animation_19: -6480980745948520502
+      Bart Jump Animation_2: -7774880049373271181
+      Bart Jump Animation_3: -8484658524740111266
+      Bart Jump Animation_4: -3981522958500739396
+      Bart Jump Animation_5: -6788874971900296129
+      Bart Jump Animation_6: 4084314377296164236
+      Bart Jump Animation_7: -9043599499088182583
+      Bart Jump Animation_8: 7010941451769916757
+      Bart Jump Animation_9: 8001962990565494166
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

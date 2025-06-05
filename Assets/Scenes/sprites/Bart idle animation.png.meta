@@ -372,7 +372,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bart idle animation_0: -3187591399860359322
+      Bart idle animation_1: -2605425739276579197
+      Bart idle animation_2: -7965113469798780197
+      Bart idle animation_3: 4963751796279282575
+      Bart idle animation_4: -9198784136275446574
+      Bart idle animation_5: 8464492323815365865
+      Bart idle animation_6: -4692097652740170919
+      Bart idle animation_7: 2824537385042893708
+      Bart idle animation_8: 3932191040130196468
+      Bart idle animation_9: 9023157520043821913
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
